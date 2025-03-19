@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap');
+/*
+CORES
+
+#4c8cec - AZUL ESCURO
+#7cacf4 - AZUL CLARO
+
+*/
+
+*{
+    margin: 0;
+    padding:  0;
+    font-family: 'tektur', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #cccccc5e;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4c8cec;
+    color: rgb(255, 255, 255);
+    padding: 40px;
+}
+
+main{
+    height: 300vh;
+}
+
+nav{
+    display: flex;
+    gap: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.section-first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88vh;
+    gap: 60px;
+}
+
+.section-first img{
+    height: 660px;
+    width: 660px;
+    margin-left: -100px;
+}
+
+.section-first h1{
+    font-size: 80px;
+    color: #4c8cec;
+}
+
+.section-first h2{
+    font-size: 40px;
+    color: #7cacf4;
+}
+
+.section-first .btn{
+    border: none;
+    background-color: #4c8cec;
+    height: 60px;
+    margin-top: 100px;
+    width: 40%;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.section-first button:hover{
+    background-color: #227afd;
+    font-size: 25px;
+}
+
+.section-second{
+    background-color: #227afd;
+    height: 110vh;
+}
+
+.section-second h1{
+    color: white;
+    font-size: 40px;
+    padding-top:  40px;
+    padding-left: 360px;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 100px;
+    gap: 60px;
+
+    max-width: 80%;
+    flex-wrap: wrap;
+}
+
+.box{
+    background-color: white;
+    height: 310px;
+    width: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.box img{
+    height: 210px;
+    width: 240px;
+}
+
+.box button{
+    width: 80%;
+    height: 30px;
+    border: none;
+    background-color: #227afd;
+    color: white;
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+.box button:hover{
+    background-color: #0065fd;
+    font-size: 15px;
+}   
+
+
+
+
+
