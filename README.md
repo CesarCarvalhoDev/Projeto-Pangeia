@@ -38,4 +38,4 @@ A plataforma contará com as seguintes funcionalidades essenciais:
 - A plataforma usará protocolos de segurança como SSL para proteger os dados dos usuários.
 ```
 
-Deseja que eu gere esse conteúdo como arquivo `.md` para você baixar?
+
