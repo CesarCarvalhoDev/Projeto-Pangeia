@@ -1,2 +1,3 @@
 # Projeto-Pangeia
-O projeto pangeia será um site que disponibiliza jogos retro e indie 
+O Projeto Pangeia consiste no desenvolvimento de uma plataforma web dedicada à distribuição de jogos eletrônicos com foco especial nos gêneros retrô e indie. A proposta visa criar um ambiente acessível, seguro e intuitivo para que usuários possam explorar, baixar e compartilhar jogos que marcaram época ou que foram produzidos de forma independente, valorizando a criatividade e a nostalgia. A plataforma oferecerá uma curadoria de títulos selecionados, categorização por gêneros, funcionalidades de busca, avaliações de usuários e perfis personalizados. O projeto tem como objetivo não apenas disponibilizar jogos, mas também fomentar o reconhecimento e a preservação da cultura dos games retrô e independentes.
+
