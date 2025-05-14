@@ -1,0 +1,405 @@
+# História de Usuário:1
+
+## Título
+
+Criar minha conta
+
+## Narrativa
+
+**Como** uma pessoa nova na plataforma  
+**Eu quero** cadastro rápido com e-mail e senha  
+**Para que** eu possa acessar meus downloads e receber recomendações personalizadas
+
+## Critérios de Aceitação
+
+1. O usuário deve fornecer e-mail e senha válidos
+2. O sistema deve validar e armazenar os dados com segurança
+3. O usuário deve receber um e-mail de confirmação
+
+**Complexidade:** Pequena 
+
+## Detalhes Técnicos
+
+- Implementar validação de e-mail
+- Criptografia de senha 
+- Integração com serviço de e-mail
+
+## Dependências
+
+Nenhuma
+
+## Estimativa
+
+2 semanas
+
+## Prioridade
+
+Muita
+
+## Observações
+
+Primeiro fluxo a ser implementado
+
+
+
+# História de Usuário:2
+
+## Título
+
+Fazer login de forma segura 
+
+## Narrativa
+
+**Como** um usuário cadastrado  
+**Eu quero** acessar minha conta
+**Para que** eu possa ter acesso a minha bibliotec de jogos 
+
+## Critérios de Aceitação
+
+1. Sistema deve validar e-mail e senha
+2. Bloquear após 3 tentativas erradas
+3. Opção de redefinir senha via e-mail
+
+**Complexidade:** Média
+
+## Detalhes Técnicos
+
+- Autenticação dedois fatores 
+- Rate limiting para tentativas
+- Fluxo de recuperação de senha
+
+## Dependências
+
+ Cadastro de Usuário
+
+## Estimativa
+
+3 semanas 
+
+## Prioridade
+
+Muita
+
+## Observações
+
+Implementar junto com segurança básica
+
+
+
+# História de Usuário:3
+
+## Título
+
+Baixar jogos retrô
+
+## Narrativa
+
+**Como** um usuario  
+**Eu quero** baixar jogos de maneira rapida e segura 
+**Para que** eu possa jogar tanto online como offline
+
+## Critérios de Aceitação
+
+1. Botão de download visível e funcional
+2. Arquivos verificados e seguros
+3. Notificação ao completar download
+
+**Complexidade:** Média
+
+## Detalhes Técnicos
+
+- Rede de servidores para distribuição
+- checkup de verificação
+- Notificações email
+
+## Dependências
+
+ Login Seguro
+
+## Estimativa
+
+5 semanas
+
+## Prioridade
+
+altissima 
+
+
+
+# História de Usuário:4
+
+## Título
+
+Buscar jogos
+
+## Narrativa
+
+**Como** um usuário  
+**Eu quero** pesquisar por nome, gênero ou ano  
+**Para que** encontre títulos rapidamente
+
+## Critérios de Aceitação
+
+1. Retornar resultados relevantes
+2. Pesquisa funcional
+3. Filtros de busca
+
+**Complexidade:** Média
+
+## Detalhes Técnicos
+
+- mecanismo de pesquisa
+- Cache de consultas
+- Informação com filtros dinâmicos
+
+## Dependências
+
+ Download de Jogos
+
+## Estimativa
+
+3 semanas
+
+## Prioridade
+
+regular
+
+# História de Usuário:5
+
+## Título
+
+Visualizar jogos por categoria
+
+## Narrativa
+
+**Como** um usuario  
+**Eu quero** ver jogos organizados por categorias  
+**Para que** encontre títulos do meu interesse facilmente
+
+## Critérios de Aceitação
+
+1. Classificar por gênero, ano e desenvolvedor
+2. Menu intuitivo de categorias
+3. Atualização dinâmica conforme novos jogos
+
+**Complexidade:** Média
+
+## Detalhes Técnicos
+
+- Tags de categorização
+- Sistema de filtragem
+- Componente de navegação lateral
+
+## Dependências
+
+ Busca de Jogos
+
+## Estimativa
+
+7 semans
+
+## Prioridade
+
+mediana 
+
+
+
+# História de Usuário:6
+
+## Título
+
+Avaliar jogos baixados
+
+## Narrativa
+
+**Como** um jogador  
+**Eu quero** avaliar os jogos que baixei  
+**Para que** outros usuários conheçam os melhores
+
+## Critérios de Aceitação
+
+1. Sistema de 1-5 estrelas
+2. Comentários opcionais
+3. Exibir média das avaliações
+
+**Complexidade:** Média
+
+## Detalhes Técnicos
+
+- Componente de avaliação 
+- Moderação de comentários
+- Cálculo de média atribuida
+
+## Dependências
+
+ Download de Jogos
+
+## Estimativa
+
+1 semana
+
+## Prioridade
+
+minima
+
+
+---
+
+# História de Usuário:7
+
+## Título
+
+Acessar em qualquer dispositivo
+
+## Narrativa
+
+**Como** um usuário  
+**Eu quero** usar o site em celular ou computador  
+**Para que** tenha experiência limpa em todos dispositivos
+
+## Critérios de Aceitação
+
+1. Layout responsivo
+2. Botões acessíveis em mobile
+3. Navegação rápida e intuitiva
+
+**Complexidade:** Alta
+
+## Detalhes Técnicos
+
+- Design mobile
+- Media queries CSS
+
+## Dependências
+
+Todas as histórias de frontend
+
+## Estimativa
+
+10 semanas 
+
+## Prioridade
+
+alta
+
+
+
+# História de Usuário:8
+
+## Título
+
+Garantir segurança nos downloads
+
+## Narrativa
+
+**Como** administrador  
+**Eu quero** verificar arquivos antes de disponibilizar para download  
+**Para que** usuários não baixem conteúdo prejudicial
+
+## Critérios de Aceitação
+
+1. Verificação de integridade
+2. Aprovação prévia de arquivos
+3. Notificar sobre riscos potenciais
+
+**Complexidade:** Alta
+
+## Detalhes Técnicos
+
+- Antivirus
+- verificação de conteudo
+- Sistema de aprovação em dois passos
+
+## Dependências
+
+ Download de Jogos
+
+## Estimativa
+
+5 semanas 
+
+## Prioridade
+
+altissima 
+
+
+
+# História de Usuário:9
+
+## Título
+
+Acessar histórico de downloads
+
+## Narrativa
+
+**Como** usuário cadastrado  
+**Eu quero** ver meus downloads anteriores  
+**Para que** possa baixar novamente se necessário
+
+## Critérios de Aceitação
+
+1. Listar todos downloads realizados
+2. Opção de rebaixar diretamente
+3. Disponível na conta do usuário
+
+**Complexidade:** Baixa
+
+## Detalhes Técnicos
+
+- Tabela com histórico
+- Paginação de resultados
+- Relação usuário-downloads
+
+## Dependências
+
+ Login Seguro
+
+## Estimativa
+
+2 semanas 
+
+## Prioridade
+
+baixa 
+
+---
+
+# História de Usuário:10  
+
+## Título
+
+Receber notificações de lançamentos
+
+## Narrativa
+
+**Como** usuário cadastrado  
+**Eu quero** ser avisado sobre novos jogos  
+**Para que** acompanhe as novidades
+
+## Critérios de Aceitação
+
+1. Configuração de notificações
+2. Alertas baseados em preferências
+3. Opção por e-mail ou no aplicativo 
+
+**Complexidade:** Média
+
+## Detalhes Técnicos
+
+- Sistema de preferências
+- Serviço de notificações
+- Templates de e-mail
+
+## Dependências
+
+ Cadastro de Usuário
+
+## Estimativa
+
+5 semanas 
+
+## Prioridade
+
+baixissima
+
+
