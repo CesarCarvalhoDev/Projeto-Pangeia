@@ -15,7 +15,7 @@ Apresentar o modelo de arquitetura escolhido pelo grupo
 
 ### 1.2 Escopo
 
-[Descrição do escopo da arquitetura]
+O escopo deste documento é descrever a arquitetura adotada para o Projeto Pangeia, uma plataforma de jogos retrô e indie. O objetivo é apresentar as decisões arquiteturais, as tecnologias escolhidas e a estrutura em camadas do sistema. O documento também detalha como a arquitetura suporta casos de uso como pesquisa de jogos, autenticação de usuários e gestão de downloads, garantindo escalabilidade, segurança e facilidade de manutenção. Além disso, a arquitetura permitirá integração com sistemas externos e suportará um grande número de usuários e downloads simultâneos.
 
 ### 1.3 Definições, Acrônimos e Abreviações
 
@@ -251,7 +251,7 @@ Função: Ajuda a detectar falhas, analisar o desempenho da aplicação, identif
 ## 9. Visão de Dados
 
 ### 9.1 Modelo de Dados
-
+[Descrição dos modelos de dados]
 ## 10. Tamanho e Performance
 
 [Objetivos e restrições de tamanho e performance]
