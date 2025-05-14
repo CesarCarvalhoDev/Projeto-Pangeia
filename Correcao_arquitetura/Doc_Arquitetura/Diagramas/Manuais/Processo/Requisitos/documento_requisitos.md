@@ -20,7 +20,16 @@ O site oferecerá uma plataforma segura para aquisição de jogos, categorizaç�
 
 ### 1.3 Definições, Acrônimos e Abreviações
 
-[Lista de termos, definições, acrônimos e abreviações utilizados no documento]
+Termo / Sigla	Definição
+Pangeia	Nome do projeto e da plataforma de distribuição de jogos retrô e indie.
+Indie	Jogos desenvolvidos de forma independente, sem grandes distribuidoras.
+Retrô	Estilo de jogo que remete a consoles e visuais clássicos.
+RF	Requisito Funcional – descreve funções e comportamentos esperados.
+RNF	Requisito Não Funcional – descreve restrições de desempenho, segurança etc.
+UI (Interface)	Interface de Usuário – parte visual com a qual o usuário interage.
+UX	Experiência do Usuário – qualidade da interação do usuário com o sistema.
+SQL	Structured Query Language – linguagem usada para manipulação de bancos de dados.
+Admin	Administrador da plataforma, com permissões de moderação e gestão.
 
 ## 2. Descrição Geral
 
