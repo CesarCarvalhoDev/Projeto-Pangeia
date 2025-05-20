@@ -1,0 +1,69 @@
+flowchart TD
+
+%% Apresentação
+A[TelaCadastro] --> B[SistemaCadastro]
+A2[HomeView] --> H1[GestorBusca]
+A2 --> H2[GestorDownload]
+A2 --> H3[GestorAvaliacao]
+
+%% Cadastro e autenticação
+B --> C{Valida dados?}
+C -- Sim --> D[Cria Usuario]
+D --> E[Chama SistemaSeguranca]
+E --> F{Email e senha válidos?}
+F -- Sim --> G[Usuário cadastrado com sucesso]
+F -- Não --> Z[Cadastro rejeitado]
+
+%% Login
+Login[Usuário preenche login] --> SA[SistemaAutenticacao]
+SA --> SS[SistemaSeguranca]
+SS --> LG{Credenciais corretas?}
+LG -- Sim --> H[Redireciona para HomeView]
+LG -- Não --> ERRO[Mostra erro de login]
+
+%% HomeView
+H --> H1
+H1 --> R1[Exibe jogos filtrados]
+
+H --> H2
+H2 --> R2[Realiza download]
+R2 --> DL[Download criado e iniciado]
+DL --> Notifica[Usuário é notificado]
+
+H --> H3
+H3 --> R3[Registra avaliação]
+R3 --> SalvaAvaliacao[Salva dados no domínio]
+
+%% Estilo por camadas
+subgraph Apresentação
+    A
+    A2
+    Login
+end
+
+subgraph Aplicação
+    B
+    SA
+    H1
+    H2
+    H3
+end
+
+subgraph Domínio
+    D
+    R1
+    R2
+    R3
+    DL
+    SalvaAvaliacao
+end
+
+subgraph Infraestrutura
+    E
+    F
+    Z
+    SS
+    LG
+    ERRO
+end
+

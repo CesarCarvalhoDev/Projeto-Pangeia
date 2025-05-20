@@ -1,0 +1,123 @@
+classDiagram
+
+%% -----------------------
+%% Camada de Apresentação
+%% -----------------------
+class TelaCadastro {
+    +preencherFormulario(): void
+    +enviarDados(): void
+}
+
+class HomeView {
+    +filtrarJogos(): void
+    +mostrarJogos(): void
+    +baixarJogo(j: Jogo): void
+    +avaliarJogo(): void
+}
+
+%% -----------------------
+%% Camada de Aplicação
+%% -----------------------
+class SistemaCadastro {
+    +cadastrarUsuario(nome: String, email: String, senha: String): void
+}
+
+class SistemaAutenticacao {
+    +autenticar(email: String, senha: String): boolean
+}
+
+class GestorDownload {
+    +realizarDownload(jogo: Jogo, usuario: Usuario): void
+}
+
+class GestorAvaliacao {
+    +registrarAvaliacao(usuario: Usuario, jogo: Jogo, nota: int, comentario: String): void
+}
+
+class GestorBusca {
+    +buscarJogos(filtro: FiltroBusca): Jogo[]
+}
+
+%% -----------------------
+%% Camada de Domínio
+%% -----------------------
+class Usuario {
+    -id: int
+    -nome: String
+    -email: String
+    -senha: String
+    -preferencias: String[]
+    +validarSenha(senha: String): boolean
+    +ativarNotificacoes(): void
+    +verHistorico(): void
+}
+
+class Jogo {
+    -id: int
+    -nome: String
+    -genero: String
+    -ano: int
+    -desenvolvedor: String
+    -mediaAvaliacao: float
+    +verificarIntegridade(): boolean
+    +calcularMedia(): float
+}
+
+class Avaliacao {
+    -id: int
+    -usuario: Usuario
+    -jogo: Jogo
+    -nota: int
+    -comentario: String
+}
+
+class FiltroBusca {
+    -nome: String
+    -genero: String
+    -ano: int
+}
+
+class Download {
+    -id: int
+    -jogo: Jogo
+    -usuario: Usuario
+    -dataHora: DateTime
+    -status: String
+    +iniciar(): void
+    +concluir(): void
+    +notificarUsuario(): void
+}
+
+%% -----------------------
+%% Camada de Infraestrutura
+%% -----------------------
+class SistemaSeguranca {
+    -tentativasFalhas: int
+    +autenticar(email: String, senha: String): boolean
+    +bloquearTemporario(): void
+}
+
+%% -----------------------
+%% Relacionamentos entre camadas
+%% -----------------------
+TelaCadastro --> SistemaCadastro
+HomeView --> GestorBusca
+HomeView --> GestorDownload
+HomeView --> GestorAvaliacao
+
+SistemaCadastro --> Usuario
+SistemaCadastro --> SistemaSeguranca
+
+SistemaAutenticacao --> SistemaSeguranca
+SistemaAutenticacao --> Usuario
+
+GestorDownload --> Download
+GestorDownload --> Usuario
+GestorDownload --> Jogo
+
+GestorAvaliacao --> Avaliacao
+GestorAvaliacao --> Usuario
+GestorAvaliacao --> Jogo
+
+GestorBusca --> FiltroBusca
+GestorBusca --> Jogo
