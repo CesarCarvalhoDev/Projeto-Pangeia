@@ -1,0 +1,36 @@
+# Roteiro Utilizado
+
+## Perguntas Utilizadas para Coleta de Informações
+
+1. Qual é o objetivo principal do site?  
+2. Quais tipos de jogos retrô serão disponibilizados? (Exemplo: de quais plataformas ou décadas?)  
+3. Os jogos serão totalmente gratuitos ou haverá alguma forma de monetização?  
+4. Como garantir que os downloads sejam seguros para os usuários?  
+5. Quais medidas serão adotadas para proteger o site contra ataques e garantir sua confiabilidade?  
+6. Os jogos disponíveis precisarão passar por algum tipo de verificação ou curadoria antes de serem adicionados à plataforma?  
+7. Haverá alguma forma de categorização para facilitar a busca pelos jogos?  
+8. Qual será a experiência esperada do usuário ao navegar e fazer download na plataforma?  
+9. Como será feita a manutenção do site para garantir sua segurança e estabilidade a longo prazo?  
+
+---
+
+## Resumo das Respostas/Informações Coletadas
+
+O site proposto deve disponibilizar jogos retrô gratuitos para download, garantindo que seja seguro e confiável para os usuários. A plataforma precisa oferecer um ambiente protegido contra ameaças cibernéticas, assegurando que os arquivos sejam livres de vírus e malwares.
+
+Além disso, é fundamental estabelecer critérios de curadoria para os jogos disponibilizados, garantindo que sejam legítimos e não violem direitos autorais.
+
+---
+
+## Reflexão sobre o Processo e Aprendizados
+
+Durante o desenvolvimento desse conceito, percebemos a importância de priorizar a segurança e a confiabilidade do site. Isso envolve a implementação de protocolos de segurança, como:
+
+- Uso de **SSL (Secure Sockets Layer)**  
+- **Verificação de arquivos** antes do download  
+- **Transparência quanto à origem** dos jogos  
+
+Além disso, aprendemos que a **experiência do usuário** será essencial para o sucesso da plataforma, exigindo:
+
+- Uma **interface intuitiva**  
+- Um **sistema eficiente de categorização e busca** de jogos  
