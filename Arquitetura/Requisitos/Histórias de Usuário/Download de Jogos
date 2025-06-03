@@ -1,0 +1,13 @@
+## 3. Download de Jogos
+
+**História de Usuário**  
+Como um jogador,  
+Eu quero baixar jogos retrô de forma rápida  
+Para que eu possa jogá-los offline.
+
+**Critérios de Aceitação:**
+- O botão de download deve estar visível e funcional.
+- O sistema deve fornecer arquivos verificados e seguros.
+- O usuário deve ser notificado quando o download for concluído.
+
+**Complexidade:** Média
