@@ -1,0 +1,61 @@
+# Caso de Teste: CT-001
+
+## Título
+
+Download de jogo após pesquisa
+
+## Objetivo
+
+Verificar se o usuário consegue pesquisar um jogo específico e realizar o download com sucesso.
+
+## Requisitos/Histórias Relacionados
+
+- RF-001: Funcionalidade de pesquisa de jogos
+- RF-002: Disponibilização de jogos para download
+- HU-003: Como usuário, quero encontrar rapidamente um jogo e baixá-lo para jogar offline.
+
+## Pré-condições
+
+1. O protótipo da plataforma Pangeia deve estar acessível.
+2. O participante deve ter acesso à internet e ao navegador compatível.
+3. Deve haver pelo menos um jogo disponível para pesquisa e download.
+
+## Dados de Teste
+
+- Nome do jogo: "Super Pixel Bros"
+- Navegador: Google Chrome (versão mais recente)
+- Ambiente: Protótipo navegável no Figma
+
+## Passos
+
+1. Acessar a página inicial da plataforma Pangeia.
+2. Inserir o nome do jogo "Super Pixel Bros" no campo de busca.
+3. Clicar no botão de pesquisa.
+4. Identificar o jogo nos resultados e clicar sobre ele.
+5. Clicar no botão "Download".
+
+## Resultado Esperado
+
+O jogo "Super Pixel Bros" é localizado com sucesso na pesquisa e o botão de download está visível e funcional, permitindo o início do download sem erros.
+
+## Pós-condições
+
+1. O jogo é marcado como baixado (se aplicável no sistema).
+2. O sistema registra a ação no histórico do usuário (futura funcionalidade).
+3. A interface volta ao estado padrão após o clique.
+
+## Tipo de Teste
+
+Teste de Aceitação
+
+## Automação
+
+Manual
+
+## Prioridade
+
+Alta
+
+## Observações
+
+Durante o teste de usabilidade, foi identificado que o botão de download estava pouco visível. A interface foi atualizada com um botão de maior contraste, conforme melhorias aplicadas no Figma.
