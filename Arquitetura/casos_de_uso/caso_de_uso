@@ -1,0 +1,81 @@
+# Caso de Uso: CU-001
+
+## Nome
+
+Pesquisar e baixar jogo
+
+## Descrição
+
+Permitir que o usuário pesquise por um jogo específico na plataforma Pangeia e realize o download do mesmo de forma simples e eficiente.
+
+## Atores
+
+- Usuário (primário)
+- Sistema (secundário)
+
+## Pré-condições
+
+1. O usuário acessou a plataforma Pangeia.
+2. O sistema está online e com jogos disponíveis no banco de dados.
+
+## Fluxo Básico
+
+1. O usuário acessa a página inicial.
+2. O usuário digita o nome do jogo no campo de busca.
+3. O sistema exibe os resultados correspondentes.
+4. O usuário seleciona o jogo desejado.
+5. O sistema exibe a página do jogo com opção de download.
+6. O usuário clica no botão de download.
+7. O sistema inicia o download do arquivo do jogo.
+
+## Fluxos Alternativos
+
+### Jogo não encontrado
+
+1. O usuário digita o nome de um jogo inexistente.
+2. O sistema exibe uma mensagem: "Nenhum jogo encontrado para os termos pesquisados."
+
+### Download já realizado anteriormente
+
+1. O sistema detecta que o jogo já foi baixado.
+2. Exibe um aviso: "Você já baixou este jogo anteriormente. Deseja baixar novamente?"
+
+## Fluxos de Exceção
+
+### Falha na pesquisa (erro de rede)
+
+1. O usuário insere o termo e clica em pesquisar.
+2. O sistema apresenta mensagem de erro: "Não foi possível realizar a pesquisa. Verifique sua conexão."
+
+### Falha no download
+
+1. O usuário clica em download.
+2. O sistema apresenta erro: "Falha ao iniciar o download. Tente novamente mais tarde."
+
+## Pós-condições
+
+1. O jogo é baixado com sucesso no dispositivo do usuário.
+2. A ação é registrada no histórico (quando funcionalidade estiver implementada).
+
+## Requisitos Relacionados
+
+- RF-001: Funcionalidade de pesquisa
+- RF-002: Disponibilização para download
+- RF-007: Interface responsiva e acessível
+- HU-003: Como usuário, quero encontrar rapidamente um jogo e baixá-lo para jogar offline.
+
+## Interface de Usuário
+
+Tela inicial com campo de busca visível, página de resultados com miniaturas dos jogos, e página individual do jogo com botão de download destacado. Protótipos disponíveis no Figma.
+
+## Diagrama
+
+```mermaid
+flowchart TD
+    A["Usuário acessa página inicial"]
+    A --> B["Usuário digita nome do jogo"]
+    B --> C["Sistema exibe resultados"]
+    C --> D["Usuário seleciona jogo"]
+    D --> E["Sistema exibe detalhes do jogo"]
+    E --> F["Usuário clica em download"]
+    F --> G["Sistema inicia o download"]
